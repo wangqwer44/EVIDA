@@ -1,4 +1,17 @@
+# python
 __pycache__/
 *.pyc
+*.pyo
+
+# env
+.env
+.venv
+
+# vscode
 .vscode/
+
+# uploads
 uploads/
+
+# mac
+.DS_Store
