@@ -1,0 +1,68 @@
+{
+    "merchant": null,
+    "date": null,
+    "time": null,
+    "payment_method": null,
+    "total_amount": null,
+    "items_total": 16740,
+    "items": [
+        {
+            "name": "더건강한샌드위치햄",
+            "quantity": 1,
+            "amount": 2190
+        },
+        {
+            "name": "서울체다SLICE치즈20",
+            "quantity": 20,
+            "amount": 3690
+        },
+        {
+            "name": "The좋은버터롤(8입)",
+            "quantity": 1,
+            "amount": 3290
+        },
+        {
+            "name": "속편한우유저지방",
+            "quantity": 1,
+            "amount": 4280
+        },
+        {
+            "name": "주부초밥짱",
+            "quantity": 1,
+            "amount": 3290
+        }
+    ],
+    "raw_texts": [
+        "001 더건강한샌드위치햄 2,190원",
+        "1",
+        "2000114202946",
+        "002* 850원",
+        "재사용봉투20L",
+        "1",
+        "2000113844445",
+        "003 서울체다SLICE치즈20 3,690원",
+        "1",
+        "2000000017574",
+        "004 The좋은버터롤(8입) 1 3,290원",
+        "2000059581753",
+        "005 * 속편한우유저지방 1 4,280원",
+        "2000129100273",
+        "900 주부초밥짱 3,290원",
+        "1",
+        "2000121938498"
+    ],
+    "validation": {
+        "status": "REVIEW_REQUIRED",
+        "is_deductible": true,
+        "warnings": [
+            "상호명 인식 실패",
+            "날짜 인식 실패",
+            "합계 금액을 인식하지 못했습니다"
+        ],
+        "rules_applied": [
+            "상호명_누락",
+            "날짜_누락",
+            "금액_누락"
+        ]
+    }
+}
