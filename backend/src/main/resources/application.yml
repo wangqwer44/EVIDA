@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: evida-backend
+  datasource:
+    url: jdbc:h2:mem:evida;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  h2:
+    console:
+      enabled: true
+
+server:
+  port: 8080
+
+evida:
+  storage:
+    upload-dir: uploads
+  ai:
+    base-url: http://localhost:8000
+    use-live-service: false
+  policy:
+    auto-approval-threshold: 0.95
+    nondeductible-keywords:
+      - ktx
+      - 택시
+      - taxi
+      - 미용실
+      - 유흥
+  security:
+    users:
+      - username: employee
+        password: employee1234
+        role: USER
+      - username: finance
+        password: finance1234
+        role: FINANCE
+      - username: admin
+        password: admin1234
+        role: ADMIN

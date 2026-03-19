@@ -1,0 +1,14 @@
+package com.evida.backend.enums;
+
+public enum AuditAction {
+    UPLOADED,
+    ANALYZED,
+    RULE_REJECTED,
+    DEDUCTIBILITY_MARKED_FALSE,
+    MANUAL_CHECK_REQUIRED,
+    CLARIFICATION_REQUESTED,
+    READY_TO_SUBMIT,
+    SUBMITTED,
+    FINANCE_APPROVED,
+    FINANCE_REJECTED
+}
